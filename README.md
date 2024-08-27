@@ -1,1 +1,1 @@
-# admin-dashboard
+For this project I will be creating the front end of an admin dashboard.  I will mostly focus on using grid properties but will look to leverage flexbox when I see fit.  There will be a search bar, left sidebar, top navigation bar, main content tabs, and right-side content tabs.
