@@ -1,8 +1,17 @@
 body {
-    height: 50vh;
     background-color: #FBFBFB;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    margin: 5;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 .sidebar img,
@@ -27,7 +36,7 @@ body {
     grid-template-columns: 2fr 1fr;
     grid-auto-flow: column;
     align-items: center;
-    padding: 50px;
+    padding: 10px 50px;
 }
 
 .search,
@@ -105,7 +114,7 @@ button:hover {
     color: #ffffff;
     background-color: #619E81;
     display: grid;
-    grid-template-rows: 100px 400px 250px;
+    grid-template-rows: 100px 500px 400px;
     align-content: start;
     justify-content: start;
     gap: 30px;
@@ -136,7 +145,7 @@ button:hover {
 
 .dashboard-middle-list .list-text,
 .dashboard-bottom-list .list-text {
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding-left: 12px;
 }
 
@@ -147,13 +156,108 @@ button:hover {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 3fr 1fr;
+    padding: 20px;
 }
 
-li {
-    list-style: none;
+.projects,
+.announcements-trending {
+    padding: 10px;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
+.projects-cards {
+    display: grid;
+    grid-template: 200px 200px 200px / 1fr 1fr;
+    gap: 20px;
 }
+
+.card-icons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-content: end;
+    gap: 20px;
+}
+
+img[src="images/star-icon.svg"],
+img[src="images/eye-icon.svg"],
+img[src="images/share-icon.svg"] {
+    height: 1.25em;
+}
+
+.card,
+.announcements-list,
+.trending-list {
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #C9C9C9;
+    padding: 15px;
+}
+
+.card {
+    border-left: 7px solid #9E617E;
+    display: grid;
+}
+
+.card-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.card-body {
+    margin-top: 2px;
+}
+
+.projects-title,
+.announcements-title,
+.trending-title {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.announcements-list {
+    padding: 30px;
+}
+
+#last-list-item {
+    border-bottom: 0 solid #C9C9C9;
+}
+
+.announcements-list li {
+    border-bottom: 1px solid #C9C9C9;
+}
+
+.announcements-list .title {
+    font-weight: 600;
+    font-size: .9em;
+    margin-bottom: 2px;
+}
+
+.announcements-list .body {
+    font-size: .8em;
+    margin-top: 2px;
+}
+
+.trending-list .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item img {
+    height: 3em;
+}
+
+.handle-project {
+    font-size: .9em;
+}
+
+.handle {
+    margin-bottom: 2px;
+}
+
+.project {
+    color: #C9C9C9;
+    margin-top: 2px;
+}
+

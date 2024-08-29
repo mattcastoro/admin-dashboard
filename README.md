@@ -8,5 +8,7 @@ Header icons #363636
 Sidebar #619E81
 Buttons #619E81
 Buttons:hover #81B19A
+Card backgoumd #FBFBFB
 Card border #9E617E
+Card box-shadow #C9C9C9
 Project background #E2E2E2
